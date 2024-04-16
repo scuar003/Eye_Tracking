@@ -24,7 +24,7 @@ def eye_aspect_ratio(eye):
 # Initialize dlib's face detector (HOG-based) and then create
 # the facial landmark predictor
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("src/Images/shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("src/Models/shape_predictor_68_face_landmarks.dat")
 
 cap = cv2.VideoCapture(1)
 
