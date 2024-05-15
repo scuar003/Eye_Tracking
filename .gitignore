@@ -1,1 +1,2 @@
+# Ignore the uncompressed shape predictor file
 src/Models/shape_predictor_68_face_landmarks.dat
