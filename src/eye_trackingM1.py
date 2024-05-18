@@ -31,7 +31,10 @@ class CameraApp(wx.Frame):
         self.camera = None
         self.is_running = False
         self.detector = dlib.get_frontal_face_detector()
-        self.predictor = dlib.shape_predictor("src/Models/shape_predictor_68_face_landmarks.dat")
+        #self.predictor = dlib.shape_predictor("src/Models/shape_predictor_68_face_landmarks.dat")
+        self.predictor = dlib.shape_predictor("src/Models/shape_predictor_68_face_landmarks_GTX.dat")
+
+
         
     def eye_aspect_ratio(self, eye):
         eye = np.array(eye)

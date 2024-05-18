@@ -1,7 +1,9 @@
 # Ignore the uncompressed shape predictor file
 src/Models/shape_predictor_68_face_landmarks.dat
+src/Models/shape_predictor_68_face_landmarks_GTX.dat
 
 # Ignore macOS .DS_Store files
 # Ignore all .DS_Store files
 **/.DS_Store
 
+.ipynb_checkpoints
