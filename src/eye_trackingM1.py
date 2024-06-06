@@ -96,7 +96,7 @@ class CameraApp(wx.Frame):
             return
 
         eye_center = self.midpoint(eye_points[0], eye_points[3])
-        length = 15  # Adjust the length to be closer to the iris/pupil
+        length = 7  # Adjust the length to be closer to the iris/pupil
 
         end_point = eye_center
 
@@ -166,9 +166,9 @@ class CameraApp(wx.Frame):
                         gaze_direction_horizontal = "CENTER"
 
                     if gaze_ratio_vertical <= 0.9:
-                        gaze_direction_vertical = "DOWN"
-                    elif gaze_ratio_vertical > 1.1:
                         gaze_direction_vertical = "UP"
+                    elif gaze_ratio_vertical > 1.1:
+                        gaze_direction_vertical = "DOWMN"
                     else:
                         gaze_direction_vertical = "CENTER"
 

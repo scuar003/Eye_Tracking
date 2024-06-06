@@ -99,7 +99,7 @@ class CameraApp(wx.Frame):
             return
 
         eye_center = self.midpoint(eye_points[0], eye_points[3])
-        length = 8  # Adjust the length to be closer to the iris/pupil
+        length = 7  # Adjust the length to be closer to the iris/pupil
 
         end_point = eye_center
 
